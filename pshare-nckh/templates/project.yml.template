@@ -1,0 +1,24 @@
+﻿title: ""
+language: "vi"
+mode: "STRICT"
+citation_style: "APA7"
+paper_type: "student_research"
+
+workflow: ""
+# Allowed:
+# TOPIC_ONLY
+# TOPIC_WITH_QUESTIONNAIRE
+# TOPIC_WITH_SURVEY_RESULTS
+
+chapters:
+  - "Chương 1: Mở đầu"
+  - "Chương 2: Cơ sở lý thuyết và mô hình nghiên cứu"
+  - "Chương 3: Phương pháp nghiên cứu"
+  - "Chương 4: Kết quả nghiên cứu"
+  - "Chương 5: Kết luận và kiến nghị"
+
+rules:
+  fabricate_citations: false
+  fabricate_statistics: false
+  require_evidence_pack_for_chapter_4: true
+  require_evidence_pack_for_chapter_5_quantitative_conclusions: true

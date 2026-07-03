@@ -1,0 +1,12 @@
+﻿{
+  "workflow": "",
+  "status": "START",
+  "has_topic": false,
+  "has_questionnaire": false,
+  "has_survey_results": false,
+  "has_evidence_pack": false,
+  "completed_sections": [],
+  "locked_sections": [],
+  "last_action": "",
+  "qa_status": "not_started"
+}
