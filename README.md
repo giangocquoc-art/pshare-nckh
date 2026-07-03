@@ -69,11 +69,18 @@ irm https://raw.githubusercontent.com/giangocquoc-art/pshare-nckh/main/install.p
 Then use:
 
 ```text
-/nckh ten_de_tai
+/nckh tên_đề_tài
 ```
 
 ## Academic Integrity
 
 This skill does not help bypass plagiarism detection or AI detection systems.
 
-It improves originality through real sources, real data, user-specific analysis, process logging, source ledger, and strict evidence-based writing.
+It improves originality through:
+
+- real sources
+- real data
+- user-specific analysis
+- process logging
+- source ledger
+- strict evidence-based writing
