@@ -1,16 +1,22 @@
-﻿# Example: Topic With Questionnaire
+# Example: Topic With Questionnaire
 
 User input:
 
+```text
 /nckh viết bài dựa trên đề tài này
+```
 
 Attached:
 
+```text
 bang_hoi.docx
+```
 
 Expected workflow:
 
+```text
 TOPIC_WITH_QUESTIONNAIRE
+```
 
 Expected output:
 

@@ -1,4 +1,4 @@
-﻿# Academic Integrity Guard
+# Academic Integrity Guard
 
 This skill improves academic integrity and originality.
 
@@ -27,8 +27,8 @@ Check:
 - adding topic-specific analysis
 - connecting theory to the model
 - explaining why each variable matters
-- preserving process-log.md
-- maintaining source-ledger.json
+- preserving `process-log.md`
+- maintaining `source-ledger.json`
 
 ## Forbidden
 
@@ -43,8 +43,10 @@ Check:
 
 Mark issues as:
 
+```text
 [Thiếu nguồn]
 [Quá chung chung]
 [Cần gắn với đề tài]
 [Cần diễn giải từ số liệu thật]
 [Cần bổ sung phân tích riêng]
+```

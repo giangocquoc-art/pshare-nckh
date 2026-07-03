@@ -1,12 +1,14 @@
-﻿# Source Ledger Manager
+# Source Ledger Manager
 
-This skill manages source-ledger.json.
+This skill manages `source-ledger.json`.
 
 The source ledger records which sources support which claims.
 
 ## File
 
+```text
 sources/source-ledger.json
+```
 
 ## Purpose
 
@@ -21,6 +23,7 @@ Make it clear:
 
 ## Source Record Format
 
+```json
 {
   "id": "SRC001",
   "author": "Ajzen",
@@ -33,10 +36,11 @@ Make it clear:
   ],
   "status": "verified"
 }
+```
 
 ## Rules
 
 - Do not create fake source records.
-- If source details are incomplete, mark status as "needs_verification".
-- If a claim needs a source but none exists, mark [Cần bổ sung nguồn].
+- If source details are incomplete, mark status as `needs_verification`.
+- If a claim needs a source but none exists, mark `[Cần bổ sung nguồn]`.
 - Do not cite sources that are not in the ledger unless the user provides them.

@@ -1,4 +1,4 @@
-﻿# Format Builder
+# Format Builder
 
 This skill prepares Word-ready research content.
 
@@ -12,7 +12,7 @@ This skill prepares Word-ready research content.
 - format figures
 - add questionnaire appendix
 - add evidence appendix when needed
-- prepare final .docx if tool support exists
+- prepare final `.docx` if tool support exists
 
 ## Recommended Structure
 
@@ -44,4 +44,4 @@ TOPIC_WITH_QUESTIONNAIRE:
 TOPIC_WITH_SURVEY_RESULTS:
 
 - complete paper
-- Chapter 4 and Chapter 5 filled from evidence_pack.md
+- Chapter 4 and Chapter 5 filled from `evidence_pack.md`

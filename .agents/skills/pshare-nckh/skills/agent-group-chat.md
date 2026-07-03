@@ -1,4 +1,4 @@
-﻿# Agent Group Chat
+# Agent Group Chat
 
 Pshare should present work as a visible company-style group chat.
 
@@ -36,19 +36,15 @@ Messages should be short and professional.
 
 Examples:
 
+```text
 [Pshare Core] Đã nhận đề tài và đang phân loại đầu vào.
-
 [Input Classifier] Không phát hiện file khảo sát. Workflow hiện tại: TOPIC_ONLY.
-
 [Research Supervisor] Có thể tạo mô hình nghiên cứu và bảng hỏi, nhưng chưa được viết kết quả định lượng.
-
 [Survey Analyzer] Chưa có evidence_pack.md nên khóa Chương 4.
-
 [SPSS Runner] Phát hiện dữ liệu khảo sát. Tôi sẽ tạo syntax phân tích và sinh evidence pack.
-
 [Result Inserter] Tôi sẽ chỉ dùng số liệu trong evidence_pack.md để viết Chương 4 và Chương 5.
-
 [Final QA] Đã kiểm tra, không phát hiện số liệu ngoài evidence pack.
+```
 
 ## Forbidden
 

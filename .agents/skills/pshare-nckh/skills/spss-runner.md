@@ -1,4 +1,4 @@
-﻿# SPSS Runner
+# SPSS Runner
 
 This skill runs or emulates SPSS-style survey analysis from real data.
 
@@ -11,11 +11,11 @@ Use when IBM SPSS Statistics is available with a valid license.
 The system should:
 
 1. Create clean survey file.
-2. Generate .sps syntax.
+2. Generate `.sps` syntax.
 3. Run SPSS syntax.
 4. Export SPSS output.
 5. Parse output.
-6. Create evidence_pack.md.
+6. Create `evidence_pack.md`.
 
 ### PYTHON_FALLBACK
 
@@ -44,6 +44,7 @@ Generate syntax for:
 
 ## Example SPSS Syntax Pattern
 
+```spss
 GET DATA
   /TYPE=XLSX
   /FILE='survey_clean.xlsx'
@@ -67,6 +68,7 @@ REGRESSION
 
 OUTPUT EXPORT
   /DOC DOCUMENTFILE='spss_output.docx'.
+```
 
 ## Hard Rules
 

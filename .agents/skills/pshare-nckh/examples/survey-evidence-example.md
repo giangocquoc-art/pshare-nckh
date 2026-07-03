@@ -1,16 +1,22 @@
-﻿# Example: Topic With Survey Results
+# Example: Topic With Survey Results
 
 User input:
 
+```text
 /nckh phân tích khảo sát và viết bài hoàn chỉnh
+```
 
 Attached:
 
+```text
 ket_qua_khao_sat.xlsx
+```
 
 Expected workflow:
 
+```text
 TOPIC_WITH_SURVEY_RESULTS
+```
 
 Expected output:
 

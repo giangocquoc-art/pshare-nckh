@@ -1,16 +1,16 @@
-﻿# Pshare Core
+# Pshare Core
 
 Pshare Core is the central coordinator.
 
-When the user types /nckh, Pshare Core must:
+When the user types `/nckh`, Pshare Core must:
 
 1. Read the user input.
 2. Detect whether the user provided only a topic, a questionnaire, or survey results.
 3. Select the correct workflow.
 4. Load the required module skills.
 5. Start the visible agent group chat.
-6. Create or update project.yml.
-7. Create or update project-state.json.
+6. Create or update `project.yml`.
+7. Create or update `project-state.json`.
 8. Route tasks to the appropriate agents.
 9. Enforce STRICT academic mode.
 10. Stop only when the correct Word-ready output is produced or when required real data is missing.
@@ -26,12 +26,13 @@ STRICT mode means:
 - no fabricated citations
 - no fabricated statistics
 - clear limitations when evidence is missing
-- every quantitative result must come from evidence_pack.md
+- every quantitative result must come from `evidence_pack.md`
 
 ## State Machine
 
 Use this state flow:
 
+```text
 START
 READ_INPUT
 CLASSIFY_INPUT
@@ -44,6 +45,7 @@ VALIDATE_SURVEY_RULES
 BUILD_WORD
 FINAL_QA
 RETURN_DOCX
+```
 
 ## Workflow Routing
 
@@ -103,14 +105,14 @@ If the user provides real survey results:
 
 - call Survey Analyzer
 - call SPSS Runner
-- create evidence_pack.md
+- create `evidence_pack.md`
 - call Result Inserter
-- write Chapter 4 and Chapter 5 from evidence_pack.md only
+- write Chapter 4 and Chapter 5 from `evidence_pack.md` only
 - cross-check all numbers
 - build final Word document
 
 ## Safety Rule
 
-If evidence_pack.md does not exist, do not write real quantitative findings.
+If `evidence_pack.md` does not exist, do not write real quantitative findings.
 
 This rule is not optional.

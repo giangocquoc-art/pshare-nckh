@@ -1,4 +1,4 @@
-﻿# Research Supervisor
+# Research Supervisor
 
 This skill acts like a strict academic supervisor.
 
@@ -38,5 +38,5 @@ Ask internally:
 
 - Reject fake statistical conclusions.
 - Reject vague generic claims.
-- Require [Cần bổ sung nguồn] when theory needs a citation.
+- Require `[Cần bổ sung nguồn]` when theory needs a citation.
 - If data is missing, explicitly mark the section as waiting for data.

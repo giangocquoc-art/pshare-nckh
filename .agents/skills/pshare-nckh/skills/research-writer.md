@@ -1,4 +1,4 @@
-﻿# Research Writer
+# Research Writer
 
 This skill writes Vietnamese academic research content.
 
@@ -45,7 +45,7 @@ For TOPIC_WITH_QUESTIONNAIRE:
 For TOPIC_WITH_SURVEY_RESULTS:
 
 - full paper
-- Chapter 4 and Chapter 5 using evidence_pack.md only
+- Chapter 4 and Chapter 5 using `evidence_pack.md` only
 
 ## Forbidden
 

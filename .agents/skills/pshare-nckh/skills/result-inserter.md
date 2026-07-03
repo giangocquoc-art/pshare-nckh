@@ -1,10 +1,12 @@
-﻿# Result Inserter
+# Result Inserter
 
 This skill inserts verified survey results into Chapter 4 and Chapter 5.
 
 It may only use numbers from:
 
+```text
 analysis/evidence_pack.md
+```
 
 ## Responsibilities
 
@@ -34,7 +36,7 @@ When evidence is available, create:
 
 ## Rules
 
-- Do not add numbers not present in evidence_pack.md.
+- Do not add numbers not present in `evidence_pack.md`.
 - Do not change values.
 - Do not overinterpret weak evidence.
 - Do not claim strongest factor unless Beta values support it.

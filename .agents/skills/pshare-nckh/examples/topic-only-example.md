@@ -1,12 +1,16 @@
-﻿# Example: Topic Only
+# Example: Topic Only
 
 User input:
 
+```text
 /nckh Các yếu tố ảnh hưởng đến ý định lựa chọn ngành Marketing trong kỷ nguyên AI
+```
 
 Expected workflow:
 
+```text
 TOPIC_ONLY
+```
 
 Expected output:
 

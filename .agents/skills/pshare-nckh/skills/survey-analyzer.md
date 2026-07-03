@@ -1,11 +1,11 @@
-﻿# Survey Analyzer
+# Survey Analyzer
 
 This skill handles real survey response data.
 
 Use only when the user provides:
 
-- .xlsx
-- .csv
+- `.xlsx`
+- `.csv`
 - Google Forms export
 - SPSS result tables
 - questionnaire response data
@@ -22,26 +22,26 @@ Use only when the user provides:
 7. Detect invalid responses if rules are available.
 8. Prepare clean dataset.
 9. Call SPSS Runner or Python fallback.
-10. Create evidence_pack.md.
+10. Create `evidence_pack.md`.
 
 ## Data Cleaning Rules
 
 - Do not remove responses unless there is a clear rule.
 - Report removed responses.
 - Preserve raw data.
-- Create survey_clean.csv when possible.
+- Create `survey_clean.csv` when possible.
 - Keep a log of cleaning decisions.
 
 ## Output
 
 Create:
 
-- analysis/evidence_pack.md
-- analysis/survey_clean.csv
-- analysis/descriptive.json
-- analysis/cronbach.json
-- analysis/efa.json when available
-- analysis/regression.json when available
+- `analysis/evidence_pack.md`
+- `analysis/survey_clean.csv`
+- `analysis/descriptive.json`
+- `analysis/cronbach.json`
+- `analysis/efa.json` when available
+- `analysis/regression.json` when available
 
 ## Forbidden
 

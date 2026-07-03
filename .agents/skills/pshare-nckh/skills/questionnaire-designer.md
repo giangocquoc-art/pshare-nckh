@@ -1,4 +1,4 @@
-﻿# Questionnaire Designer
+# Questionnaire Designer
 
 This skill creates or reads questionnaires.
 
