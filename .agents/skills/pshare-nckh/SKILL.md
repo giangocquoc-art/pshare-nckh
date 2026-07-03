@@ -33,15 +33,7 @@ Use this skill when the user types:
 /nckh <research_topic>
 ```
 
-Examples:
-
-```text
-/nckh Các yếu tố ảnh hưởng đến ý định lựa chọn ngành Marketing trong kỷ nguyên AI
-/nckh viết tiếp đề tài này dựa trên bảng hỏi đã gửi
-/nckh phân tích kết quả khảo sát và viết chương 4, chương 5
-```
-
-## Required Modules
+## Required modules
 
 Before working, read these module files:
 
@@ -60,11 +52,11 @@ Before working, read these module files:
 13. `skills/format-builder.md`
 14. `skills/final-qa.md`
 
-## Input Classification
+## Input classification
 
-Classify the user input into one of three workflows.
+Classify the input into one of three workflows.
 
-### 1. TOPIC_ONLY
+### TOPIC_ONLY
 
 Use this when the user only provides a research topic.
 
@@ -81,7 +73,7 @@ Output:
 
 Do not write fake survey results.
 
-### 2. TOPIC_WITH_QUESTIONNAIRE
+### TOPIC_WITH_QUESTIONNAIRE
 
 Use this when the user provides a topic and a questionnaire, but no survey results.
 
@@ -95,7 +87,7 @@ Output:
 
 Do not write Cronbach Alpha, EFA, KMO, Sig., Beta, R Square, p-value, regression results, or conclusions based on data.
 
-### 3. TOPIC_WITH_SURVEY_RESULTS
+### TOPIC_WITH_SURVEY_RESULTS
 
 Use this when the user provides real survey response data or verified survey result tables.
 
@@ -108,7 +100,7 @@ Required:
 
 Never invent missing values.
 
-## Hard Rules
+## Hard rules
 
 - Never fabricate citations.
 - Never fabricate survey results.
@@ -121,9 +113,7 @@ Never invent missing values.
 - Improve originality through real sources, real analysis, transparent process, and user-specific interpretation.
 - Show only visible work logs, not hidden chain-of-thought.
 
-## Final Output
-
-The final deliverable should be a Word-ready research paper or proposal depending on the available input.
+## Final output
 
 Recommended output names:
 
