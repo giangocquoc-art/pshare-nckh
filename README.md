@@ -1,102 +1,68 @@
-# Pshare NCKH
+# Pshare NCKH Skill Pack — Euréka Fixed
 
-**Pshare NCKH** is a GitHub-shareable skill pack for Vietnamese student research papers.
+Bản này sửa skill `pshare-nckh` theo chuẩn trình bày Euréka và các lỗi nhìn thấy trong file bài hiện tại.
 
-It is activated by:
+## Cách dùng
+
+Dùng lệnh:
 
 ```text
-/nckh <research_topic>
+/nckh <đề tài hoặc yêu cầu>
 ```
 
-## What It Does
+Ví dụ:
 
-Pshare NCKH supports three workflows:
+```text
+/nckh rà file Word này theo chuẩn Euréka
+/nckh sửa bố cục và định dạng file này cho đúng Euréka
+/nckh viết tiếp đề tài này nhưng chưa có dữ liệu khảo sát
+/nckh phân tích file khảo sát thật và viết chương 4, chương 5
+```
 
-1. **Topic only**
-   - proposes research direction
-   - creates research model
-   - creates hypotheses
-   - creates measurement scales
-   - creates questionnaire draft
+## Điểm sửa chính
 
-2. **Topic with questionnaire**
-   - reads questionnaire
-   - writes Chapter 1, Chapter 2, Chapter 3
-   - adds questionnaire appendix
-   - locks Chapter 4 and Chapter 5 quantitative findings until survey results exist
+- Thêm chế độ `STRICT_EUREKA`.
+- Thêm module chuẩn Euréka.
+- Chặn lỗi tóm tắt dài hơn 1 trang A4.
+- Chặn lỗi body bị căn giữa toàn bộ.
+- Chặn lỗi giãn dòng 1.0.
+- Chặn lỗi lề trên/dưới 2.5 cm thay vì 2 cm.
+- Chặn lỗi bảng rỗng/placeholder làm vỡ mục lục và danh mục bảng.
+- Chặn lỗi để lại `Cập nhật sau khi mở Word`.
+- Chặn lỗi để lại `[Cần bổ sung nguồn]` trong bản cuối.
+- Bỏ `Lời cảm ơn` khỏi cấu trúc mặc định để tránh rủi ro lộ danh tính.
+- Thêm kiểm tra ẩn danh: không tên tác giả, trường, logo trường, giảng viên hướng dẫn trong nội dung/phụ lục/bảng hỏi/metadata.
+- Thêm render gate: nếu tạo/sửa `.docx`, phải render ra trang ảnh và kiểm tra layout trước khi giao.
 
-3. **Topic with survey results**
-   - analyzes real survey data
-   - creates `evidence_pack.md`
-   - writes Chapter 4 and Chapter 5 only from verified evidence
-   - checks that no statistic is fabricated
+## Cấu trúc
 
-## Main Rules
+```text
+pshare-nckh/
+  SKILL.md
+  README.md
+  manifest.txt
+  skills/
+  templates/
+  examples/
+scripts/
+  install-or-replace.ps1
+```
 
-- No fake citations.
-- No fake survey statistics.
-- No fake Cronbach Alpha, EFA, KMO, Sig., Beta, R Square, or p-value.
-- No quantitative Chapter 4 without `evidence_pack.md`.
-- No quantitative Chapter 5 conclusion without `evidence_pack.md`.
-- No hidden chain-of-thought is shown.
-- Only visible agent work logs are shown.
+## Cài nhanh vào repo hiện tại
 
-## Included Skills
+Giải nén zip này vào thư mục repo `pshare-nckh`, rồi copy đè thư mục `pshare-nckh/` trong zip lên thư mục `pshare-nckh/` của repo.
 
-- Pshare Core
-- Agent Group Chat
-- Research Supervisor
-- Research Writer
-- Questionnaire Designer
-- Survey Analyzer
-- SPSS Runner
-- Result Inserter
-- Academic Integrity Guard
-- Source Ledger Manager
-- Research Process Log
-- Citation Checker
-- Format Builder
-- Final QA
-
-## Install Into Another Repo
-
-Run this in PowerShell inside the target repo:
+Có thể dùng script PowerShell kèm theo:
 
 ```powershell
-irm https://raw.githubusercontent.com/giangocquoc-art/pshare-nckh/main/install.ps1 | iex
+.\scripts\install-or-replace.ps1 -RepoRoot "C:\duong-dan\toi\pshare-nckh"
 ```
 
-Then use:
+Sau đó commit và push:
 
-```text
-/nckh tên_đề_tài
-```
-
-## Academic Integrity
-
-This skill does not help bypass plagiarism detection or AI detection systems.
-
-It improves originality through:
-
-- real sources
-- real data
-- user-specific analysis
-- process logging
-- source ledger
-- strict evidence-based writing
-
-## Repository Structure
-
-```text
-README.md
-AGENTS.md
-install.ps1
-.agents/
-└─ skills/
-   └─ pshare-nckh/
-      ├─ SKILL.md
-      ├─ README.md
-      ├─ skills/
-      ├─ templates/
-      └─ examples/
+```powershell
+git status
+git add .
+git commit -m "Fix Euréka formatting skill"
+git push
 ```

@@ -1,0 +1,36 @@
+title: ""
+language: "vi"
+mode: "STRICT_EUREKA"
+citation_style: "APA7"
+paper_type: "eureka_student_research"
+workflow: ""
+
+allowed_workflows:
+  - TOPIC_ONLY
+  - TOPIC_WITH_QUESTIONNAIRE
+  - TOPIC_WITH_SURVEY_RESULTS
+  - DOCX_EUREKA_REVIEW
+
+format:
+  page_size: "A4"
+  font: "Times New Roman"
+  main_font_size_pt: 13
+  line_spacing: 1.3
+  margins_cm:
+    left: 3
+    top: 2
+    bottom: 2
+    right: 2
+  page_number: "top_center"
+  body_alignment: "justify"
+  first_line_indent_cm: 1.27
+
+rules:
+  fabricate_citations: false
+  fabricate_statistics: false
+  require_evidence_pack_for_chapter_4: true
+  require_evidence_pack_for_chapter_5_quantitative_conclusions: true
+  final_may_contain_missing_source_placeholders: false
+  final_may_contain_update_placeholders: false
+  default_include_acknowledgements: false
+  anonymity_required: true
